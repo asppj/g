@@ -1,12 +1,12 @@
 # g
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/voidint/g)
 [![Build Status](https://travis-ci.org/voidint/g.svg?branch=master)](https://travis-ci.org/voidint/g)
-[![GoDoc](https://godoc.org/github.com/voidint/g?status.svg)](https://godoc.org/github.com/voidint/g)
+[![GoDoc](https://godoc.org/github.com/asppj/g?status.svg)](https://godoc.org/github.com/asppj/g)
 [![codecov](https://codecov.io/gh/voidint/g/branch/master/graph/badge.svg)](https://codecov.io/gh/voidint/g)
 [![codebeat badge](https://codebeat.co/badges/0b4bf243-95da-444c-b163-6cb8a35d1f8d)](https://codebeat.co/projects/github-com-voidint-g-master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/voidint/g)](https://goreportcard.com/report/github.com/voidint/g)
+[![Go Report Card](https://goreportcard.com/badge/github.com/asppj/g)](https://goreportcard.com/report/github.com/asppj/g)
 
-**注意：**`master`分支可能处于开发之中并**非稳定版本**，请通过tag下载稳定版本的源代码，或通过[release](https://github.com/voidint/g/releases)下载已编译的二进制可执行文件。
+**注意：**`master`分支可能处于开发之中并**非稳定版本**，请通过tag下载稳定版本的源代码，或通过[release](https://github.com/asppj/g/releases)下载已编译的二进制可执行文件。
 
 
 `g`是一个Linux、macOS、Windows下的命令行工具，可以提供一个便捷的多版本[go](https://golang.org/)环境的管理和切换。
@@ -32,7 +32,7 @@
     ```
 
 ### 手动安装
-- 下载[release](https://github.com/voidint/g/releases)的二进制压缩包
+- 下载[release](https://github.com/asppj/g/releases)的二进制压缩包
 - 将压缩包解压至`PATH`环境变量目录下（如`/usr/local/bin`）
 - 编辑shell环境配置文件（如`~/.bashrc`、`~/.zshrc`...）
 

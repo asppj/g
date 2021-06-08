@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	"github.com/Masterminds/semver"
+	"github.com/asppj/g/build"
 	"github.com/fatih/color"
 	"github.com/urfave/cli"
-	"github.com/voidint/g/build"
 )
 
 var (

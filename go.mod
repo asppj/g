@@ -1,4 +1,4 @@
-module github.com/voidint/g
+module github.com/asppj/g
 
 go 1.15
 

@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/Masterminds/semver"
+	"github.com/asppj/g/version"
 	"github.com/k0kubun/go-ansi"
 	"github.com/urfave/cli"
-	"github.com/voidint/g/version"
 )
 
 const (
