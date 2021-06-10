@@ -2,8 +2,11 @@ package main
 
 import (
 	"github.com/asppj/g/cli"
+	"os"
 )
 
 func main() {
-	cli.Run()
+	if err := cli.SubApp().Run(os.Args); err != nil {
+		os.Exit(1)
+	}
 }

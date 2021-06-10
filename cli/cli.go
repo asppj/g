@@ -21,8 +21,7 @@ var (
 	goroot       string
 )
 
-// Run 运行g命令行
-func Run() {
+func SubApp()*cli.App{
 	app := cli.NewApp()
 	app.Name = "g"
 	app.Usage = "Golang Version Manager"
@@ -41,11 +40,15 @@ func Run() {
 		return os.MkdirAll(versionsDir, 0755)
 	}
 	app.Commands = commands
-
-	if err := app.Run(os.Args); err != nil {
-		os.Exit(1)
-	}
+	return app
 }
+
+// // Run 运行g命令行
+// func Run(args...string) {
+// 	if err := SubApp().Run(args); err != nil {
+// 		os.Exit(1)
+// 	}
+// }
 
 func init() {
 	cli.AppHelpTemplate = fmt.Sprintf(`NAME:
