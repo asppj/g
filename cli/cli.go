@@ -11,7 +11,7 @@ import (
 	"github.com/Masterminds/semver"
 	"github.com/asppj/g/build"
 	"github.com/fatih/color"
-	"github.com/urfave/cli"
+	cli "github.com/urfave/cli/v2"
 )
 
 var (
@@ -21,13 +21,13 @@ var (
 	goroot       string
 )
 
-func SubApp()*cli.App{
+func SubApp() *cli.App {
 	app := cli.NewApp()
 	app.Name = "g"
 	app.Usage = "Golang Version Manager"
 	app.Version = build.Version()
 	app.Copyright = "Copyright (c) 2019-2021, voidint. All rights reserved."
-	app.Authors = []cli.Author{{Name: "voidint", Email: "voidint@126.com"}}
+	app.Authors = []*cli.Author{{Name: "voidint", Email: "voidint@126.com"}}
 
 	app.Before = func(ctx *cli.Context) (err error) {
 		ghomeDir = ghome()
