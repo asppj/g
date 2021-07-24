@@ -21,6 +21,20 @@ var (
 	goroot       string
 )
 
+func init() {
+	ghomeDir = ghome()
+	goroot = filepath.Join(ghomeDir, "go")
+	downloadsDir = filepath.Join(ghomeDir, "downloads")
+	if err := os.MkdirAll(downloadsDir, 0755); err != nil {
+		panic(err)
+	}
+	versionsDir = filepath.Join(ghomeDir, "versions")
+	if err := os.MkdirAll(versionsDir, 0755); err != nil {
+		panic(err)
+	}
+
+}
+
 func SubApp() *cli.App {
 	app := cli.NewApp()
 	app.Name = "g"
